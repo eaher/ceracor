@@ -27,7 +27,7 @@ body {
 
 .logo-img {
   max-height: 50px; /* Ajusta este tamaño según lo que se vea mejor */
-  width: auto;
+  max-width: auto;
 }
 
 
