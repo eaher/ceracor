@@ -95,6 +95,7 @@
   .solicitar-presupuesto-btn {
     font-size: 1.25rem;
     font-weight: bold;
+    border-radius: 15px;
     padding: 20px 0;
     background-color: #3eb2ae;
     color: #fff;
