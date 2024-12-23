@@ -18,10 +18,24 @@ body {
   color: #333;
 }
 
+.navbar-nav {
+  text-align: center;
+  background-color: #ffffff !important; /* Asegura que el fondo sea blanco */
+  border-bottom: 1px solid #eaeaea; /* Opcional: agrega un borde para separar la navbar del contenido */
+}
+
+.nav-link {
+  padding: 0 15px; /* Ajusta el espacio entre los enlaces */
+  color: #333 !important; /* Asegura que los enlaces sean visibles sobre el fondo blanco */
+}
+
+.nav-link:hover {
+  color: #007bff !important; /* Cambia el color al pasar el mouse (opcional) */
+}
 
 
 .logo-img {
-  max-height: 30px; /* Ajusta este tamaño según lo que se vea mejor */
+  max-height: 50px; /* Ajusta este tamaño según lo que se vea mejor */
   max-width: auto;
 }
 
