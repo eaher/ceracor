@@ -21,7 +21,7 @@ body {
 .navbar-nav {
   text-align: center;
   background-color: #ffffff !important; /* Asegura que el fondo sea blanco */
-  border-bottom: 1px solid #eaeaea; /* Opcional: agrega un borde para separar la navbar del contenido */
+  
 }
 
 .nav-link {
@@ -40,25 +40,8 @@ body {
 }
 
 
-/* Hero Section */
-.hero-section {
-  background-image: url('img/hero.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
 
-.hero-section h1 {
-  font-size: 4rem;
-}
 
-.hero-section p {
-  font-size: 1.5rem;
-}
 
 /* Botón Solicitar Presupuesto */
 .solicitar-presupuesto-btn {
