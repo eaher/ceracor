@@ -142,13 +142,7 @@ section {
 
 
 
-.card-name {
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil */
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+
 
 /* Título y texto */
 .card-title {
@@ -165,6 +159,37 @@ section {
 }
 
 
+/* Cards de la sección "DESCUBRÍ LOS COLORES" */
+#colores .card {
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Opcional: eliminar bordes */
+}
+
+/* Imagen de la card */
+.card-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Título y texto de las cards */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.card-text {
+  font-size: 1rem;
+  text-align: left;
+  color: #555;
+}
 
 
 
