@@ -62,6 +62,35 @@ body {
 }
 
 
+/* Estilo general */
+#asesoramiento img {
+  max-width: 100%; /* Imágenes responsivas */
+  height: auto; /* Mantener proporción */
+  margin-bottom: 15px; /* Separación entre elementos */
+}
+
+
+
+
+/* Estilo para el título principal (h2) más pequeño */
+.title-sm {
+  font-size: 1.8rem; /* Reducido */
+  font-weight: bold; /* Negrita */
+  color: black; /* Color del texto */
+  margin-bottom: 10px; /* Separación con el subtítulo */
+  line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Estilo para el subtítulo (p) más grande */
+.subtitle-lg {
+  font-size: 3rem!important; /* Más grande que el título */
+  font-weight: bold; /* Negrita */
+  color: black; /* Color del texto */
+  margin-bottom: 20px; /* Separación con el contenido principal */
+}
+
+
+
 
 /* Botón Solicitar Presupuesto */
 .solicitar-presupuesto-btn {
@@ -91,6 +120,53 @@ section {
   padding: 60px 0;
   margin-top: 10px;
 }
+
+/* General */
+.card {
+  border: none;
+  margin-bottom: 20px;
+}
+
+/* Imagen de la card */
+.card-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0; /* Bordes cuadrados */
+}
+
+
+
+.card-name {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Título y texto */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.card-text {
+  font-size: 1rem;
+  text-align: left;
+  color: #555;
+}
+
+
+
+
 
 .form-label {
   font-weight: bold;
