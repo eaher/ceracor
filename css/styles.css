@@ -5,10 +5,17 @@
   font-weight: normal;
   font-style: normal;
 }
-.test-font {
-  font-family: 'Century Gothic', sans-serif;
-  font-size: 20px;
+
+/* ITC Avant Garde Pro Bold */
+@font-face {
+  font-family: 'ITCAvantGardeProBold';
+  src: url('/fonts/ITCAvantGardePro-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
 }
+
+
+
 
 
 /* General */
@@ -45,6 +52,15 @@
   max-height: 50px;
   max-width: auto;
 }
+
+
+.nav-link-custom {
+  font-family: 'CenturyGothic', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
 
 /* Sección Inicio */
 .hero-section {
@@ -90,8 +106,10 @@
 
 /* Botón Solicitar Presupuesto */
 .solicitar-presupuesto-btn {
-  font-size: 1.25rem;
+  font-family: 'ITCAvantGardeProBold', sans-serif;
+  font-size: 21px;
   font-weight: bold;
+  letter-spacing: 2px; /* Espaciado entre letras */
   border-radius: 15px;
   padding: 20px 0;
   background-color: #3eb2ae;
