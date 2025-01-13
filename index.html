@@ -13,78 +13,78 @@
 
 <body>
 
-<!-- Navbar para pantallas grandes -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top d-none d-lg-flex">
-    <div class="container d-flex justify-content-between align-items-center">
-        <!-- Logo a la izquierda -->
-        <a class="navbar-brand" href="#">
-            <img src="img/ROSAGRES GRIS.png" alt="Logo CERACOR" class="logo-img">
-        </a>
-
-        <!-- Enlaces del menú -->
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-                <a class="nav-link nav-link-custom active" aria-current="page" href="#contacto">SOLICITA TU
-                    PRESUPUESTO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="#asesoramiento">ASESORAMIENTO TÉCNICO COMERCIAL</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="#estilo">ELEGI TU ESTILO</a>
-            </li>
-        </ul>
-
-        <!-- Logo a la derecha -->
-        <a class="navbar-brand" href="#">
-            <img src="img/LOGO H - NEGRO.png" alt="Logo Derecho" class="logo-img-right">
-        </a>
-    </div>
-</nav>
-
-<!-- Navbar para pantallas pequeñas (off-canvas) -->
-<nav class="navbar navbar-light bg-white fixed-top d-lg-none">
-    <div class="container d-flex justify-content-between align-items-center">
-        <!-- Logos a la izquierda -->
-        <div class="d-flex align-items-center">
+    <!-- Navbar para pantallas grandes -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top d-none d-lg-flex">
+        <div class="navbar-container">
+            <!-- Logo a la izquierda -->
             <a class="navbar-brand" href="#">
-                <img src="img/ROSAGRES GRIS.png" alt="Logo CERACOR" class="logo-img me-2">
+                <img src="img/ROSAGRES GRIS.png" alt="Logo CERACOR" class="logo-img">
             </a>
+
+            <!-- Enlaces del menú -->
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom active" aria-current="page" href="#contacto">SOLICITA TU
+                        PRESUPUESTO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#asesoramiento">ASESORAMIENTO TÉCNICO COMERCIAL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#estilo">ELEGI TU ESTILO</a>
+                </li>
+            </ul>
+
+            <!-- Logo a la derecha -->
             <a class="navbar-brand" href="#">
                 <img src="img/LOGO H - NEGRO.png" alt="Logo Derecho" class="logo-img-right">
             </a>
         </div>
+    </nav>
 
-        <!-- Botón para abrir el off-canvas -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
-            aria-controls="offcanvasMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</nav>
+    <!-- Navbar para pantallas pequeñas (off-canvas) -->
+    <nav class="navbar navbar-light bg-white fixed-top d-lg-none">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logos a la izquierda -->
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img src="img/ROSAGRES GRIS.png" alt="Logo CERACOR" class="logo-img me-2">
+                </a>
+                <a class="navbar-brand" href="#">
+                    <img src="img/LOGO H - NEGRO.png" alt="Logo Derecho" class="logo-img-right">
+                </a>
+            </div>
 
-<!-- Off-canvas Menu -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-    <div class="offcanvas-header d-flex justify-content-between align-items-center">
-        <!-- Título del off-canvas -->
-        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <!-- Botón para abrir el off-canvas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                aria-controls="offcanvasMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Off-canvas Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header d-flex justify-content-between align-items-center">
+            <!-- Título del off-canvas -->
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom active" aria-current="page" href="#contacto">SOLICITA TU
+                        PRESUPUESTO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#asesoramiento">ASESORAMIENTO TÉCNICO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#estilo">ELEGI TU ESTILO</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="offcanvas-body">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link nav-link-custom active" aria-current="page" href="#contacto">SOLICITA TU
-                    PRESUPUESTO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="#asesoramiento">ASESORAMIENTO TÉCNICO COMERCIAL</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="#estilo">ELEGI TU ESTILO</a>
-            </li>
-        </ul>
-    </div>
-</div>
 
 
 
@@ -92,23 +92,18 @@
 
     <!-- SECCIÓN INICIO -->
     <section id="inicio" class="hero-section">
-        <div class="container h-100 d-flex justify-content-center align-items-center text-center">
-            <div>
-                <h1 class="text-white">Bienvenido a CERACOR</h1>
-
-            </div>
+        <div class="container-fluid h-100 d-flex flex-column justify-content-center align-items-center text-center">
+            <!-- Imagen debajo del título -->
+            <img src="img/inicio.png" alt="Imagen de inicio" class="hero-image">
         </div>
     </section>
 
-    <div class="container my-4">
-        <button class="btn btn-primary w-100 solicitar-presupuesto-btn" onclick="location.href='#contacto'">SOLICITAR
-            PRESUPUESTO</button>
-    </div>
+
     <!-- SECCIÓN ASESORAMIENTO TÉCNICO COMERCIAL -->
     <section id="asesoramiento" class="py-5">
         <div class="container">
             <!-- Título principal más pequeño -->
-            <h3 class="text-center title-sm text-25px">ASESORAMIENTO TÉCNICO COMERCIAL</h3>
+            <h1 class="text-center title-sm text-25px">ASESORAMIENTO TÉCNICO</h1>
 
             <!-- Subtítulo más grande -->
             <p class="text-center subtitle-lg text-47px">¡Nos encargamos de todo!</p>
@@ -124,7 +119,7 @@
                 </div>
                 <!-- Texto -->
                 <div class="col-md-4 d-flex flex-column justify-content-start">
-                    <h4 class="text-start">¿Cómo contactar un asesor?</h4>
+                    <h4 class="text-start card-title">¿Cómo contactar un asesor?</h4>
                     <p class="text-start">
                         Completá el formulario con todos los datos, y envialo para recibir
                         asesoramiento y <strong>SOLICITAR PRESUPUESTO</strong> con nuestro asesor de tu zona.

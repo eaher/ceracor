@@ -6,6 +6,13 @@
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: 'Century Gothic bold';
+  src: url('../fonts/GOTHICB.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 /* ITC Avant Garde Pro Bold */
 @font-face {
   font-family: 'ITCAvantGardeProBold';
@@ -122,28 +129,44 @@
   }
 }
 
+/* Estilo para limitar el ancho del navbar en pantallas grandes */
+@media (min-width: 992px) {
+  .navbar-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 
 /* Sección Inicio */
 .hero-section {
-  background-image: url('../img/inicio.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
+  max-height: 650px; 
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white; 
 }
 
-/* Texto de la sección Inicio */
-.hero-section h1 {
+.hero-image {
+  max-height: 650px;
+  width: 1050px !important;
+  width: 100%;
+  height: auto;
+  border-radius: 0px; /* Opcional: redondear bordes */
+}
+/*
+h1 {
+  font-family: 'Century Gothic', sans-serif;
   font-size: 3rem;
   font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+}*/
+
 
 /* Estilo general */
 #asesoramiento img,
@@ -155,13 +178,13 @@
 
 /* Estilo para los títulos */
 .title-sm {
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'Century Gothic bold', sans-serif;
   font-size: 25px;
   font-weight: bold;
 }
 
 .subtitle-lg {
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'Century Gothic bold', sans-serif;
   font-size: 47px;
   font-weight: bold;
 }
@@ -173,11 +196,15 @@
   font-weight: bold;
   letter-spacing: 2px; /* Espaciado entre letras */
   border-radius: 15px;
-  padding: 20px 0;
+  padding: 0;
+  max-width: 975px !important;
+  height: 63px;
   background-color: #3eb2ae;
   color: #fff;
   border: none;
   text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .solicitar-presupuesto-btn:hover {
@@ -192,9 +219,9 @@
 }
 
 /* Secciones */
-section {
-  padding: 60px 0;
-  margin-top: 10px;
+section .container {
+  max-width: 1000px !important;
+  margin: 0 auto;
 }
 
 /* General para cards */
@@ -212,10 +239,11 @@ section {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 0px;
 }
 
 .card-title {
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'Century Gothic bold', sans-serif;
   font-size: 19px;
   font-weight: bold;
   margin-bottom: 5px;
@@ -225,7 +253,6 @@ section {
 .card-text {
   font-family: 'Century Gothic', sans-serif;
   font-size: 17px;
-  font-weight: normal;
   text-align: left;
   color: #555;
 }
