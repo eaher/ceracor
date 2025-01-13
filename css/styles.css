@@ -25,17 +25,56 @@
   box-sizing: border-box;
 }
 
+/* Asegurar que el off-canvas se vea bien */
+.offcanvas {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ffffff;
+}
 
-
-/* Navbar */
-.navbar-brand {
-  font-size: 24px;
+.offcanvas-title {
+  font-size: 20px;
   font-weight: bold;
   color: #333;
 }
 
+/* Ajustar el tamaño del logo en el off-canvas */
+.offcanvas .logo-img,
+.offcanvas .logo-img-right {
+  max-height: 40px;
+  width: auto;
+}
+
+
+.nav-link-custom {
+  color: #333 !important;
+  padding: 10px 0;
+}
+
+.nav-link-custom:hover {
+  color: #007bff !important;
+}
+
+/* Ajustar interlineado del menú en el off-canvas */
+.offcanvas-body .nav-link {
+  line-height: 1; /* Aumenta el interlineado */
+  padding: 10px 0;
+  color: #333;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.offcanvas-body .nav-link:hover {
+  color: #007bff;
+}
+
+/* Navbar */
+
+
 .navbar-nav {
-  text-align: center;
+
   background-color: #ffffff !important;
 }
 
@@ -48,9 +87,17 @@
   color: #007bff !important;
 }
 
-.logo-img {
+/* Estilo general para los logos */
+.logo-img,
+.logo-img-right {
   max-height: 50px;
-  max-width: auto;
+  width: auto;
+}
+
+/* Alinear el segundo logo a la derecha */
+.navbar .logo-img-right {
+  max-height: 40px; /* Ajusta el tamaño según lo necesario */
+  margin-left: 10px;
 }
 
 
@@ -58,6 +105,21 @@
   font-family: 'CenturyGothic', sans-serif;
   font-size: 12px;
   font-weight: bold;
+}
+/* Logos en pantallas pequeñas */
+@media (max-width: 991.98px) {
+  .navbar .logo-img,
+  .navbar .logo-img-right {
+    max-height: 40px;
+    width: auto;
+  }
+
+  /* Alinear ambos logos a la izquierda con espaciado */
+  .navbar .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaciado entre los logos */
+  }
 }
 
 

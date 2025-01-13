@@ -13,32 +13,78 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo-ceracor.jpg" alt="Logo CERACOR" class="logo-img">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom active" aria-current="page" href="#contacto">SOLICITA TU PRESUPUESTO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom" href="#asesoramiento">ASESORAMIENTO TÉCNICO COMERCIAL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom" href="#estilo">ELEGI TU ESTILO</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
+<!-- Navbar para pantallas grandes -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top d-none d-lg-flex">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo a la izquierda -->
+        <a class="navbar-brand" href="#">
+            <img src="img/ROSAGRES GRIS.png" alt="Logo CERACOR" class="logo-img">
+        </a>
 
+        <!-- Enlaces del menú -->
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link nav-link-custom active" aria-current="page" href="#contacto">SOLICITA TU
+                    PRESUPUESTO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#asesoramiento">ASESORAMIENTO TÉCNICO COMERCIAL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#estilo">ELEGI TU ESTILO</a>
+            </li>
+        </ul>
+
+        <!-- Logo a la derecha -->
+        <a class="navbar-brand" href="#">
+            <img src="img/LOGO H - NEGRO.png" alt="Logo Derecho" class="logo-img-right">
+        </a>
+    </div>
+</nav>
+
+<!-- Navbar para pantallas pequeñas (off-canvas) -->
+<nav class="navbar navbar-light bg-white fixed-top d-lg-none">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logos a la izquierda -->
+        <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="img/ROSAGRES GRIS.png" alt="Logo CERACOR" class="logo-img me-2">
+            </a>
+            <a class="navbar-brand" href="#">
+                <img src="img/LOGO H - NEGRO.png" alt="Logo Derecho" class="logo-img-right">
+            </a>
+        </div>
+
+        <!-- Botón para abrir el off-canvas -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+            aria-controls="offcanvasMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Off-canvas Menu -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header d-flex justify-content-between align-items-center">
+        <!-- Título del off-canvas -->
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link nav-link-custom active" aria-current="page" href="#contacto">SOLICITA TU
+                    PRESUPUESTO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#asesoramiento">ASESORAMIENTO TÉCNICO COMERCIAL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#estilo">ELEGI TU ESTILO</a>
+            </li>
+        </ul>
+    </div>
+</div>
 
 
 
@@ -160,53 +206,56 @@
             PRESUPUESTO</button>
     </div>
 
-<!-- SECCIÓN DESCUBRÍ LOS COLORES -->
-<section id="colores" class="py-5 bg-light">
-    <div class="container">
-        <!-- Título principal más pequeño -->
-        <h3 class="text-center title-sm text-25px">DESCUBRÍ LOS COLORES DEL AGUA</h3>
-        <!-- Subtítulo más grande -->
-        <p class="text-center subtitle-lg text-47px">¿Cómo se va a ver el agua en mi piscina?</p>
-        <div class="row">
-            <!-- Card 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="img/color1.png" alt="Estilo 1" class="card-img img-fluid">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-19px-bold">TRESOR: “TONOS TURQUESA”</h5>
-                        <p class="card-text text-17px-regular">Tresor Bali te cautiva, creando un espacio fascinante y misterioso.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="img/color2.png" alt="Estilo 2" class="card-img img-fluid">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-19px-bold">MISTERY: “ TONOS ARENA”</h5>
-                        <p class="card-text text-17px-regular">Playas del mediterráneo, con tonos celestes y azulados.</p>
+    <!-- SECCIÓN DESCUBRÍ LOS COLORES -->
+    <section id="colores" class="py-5 bg-light">
+        <div class="container">
+            <!-- Título principal más pequeño -->
+            <h3 class="text-center title-sm text-25px">DESCUBRÍ LOS COLORES DEL AGUA</h3>
+            <!-- Subtítulo más grande -->
+            <p class="text-center subtitle-lg text-47px">¿Cómo se va a ver el agua en mi piscina?</p>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="img/color1.png" alt="Estilo 1" class="card-img img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-19px-bold">TRESOR: “TONOS TURQUESA”</h5>
+                            <p class="card-text text-17px-regular">Tresor Bali te cautiva, creando un espacio fascinante
+                                y misterioso.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="img/color3.png" alt="Estilo 3" class="card-img img-fluid">
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="img/color2.png" alt="Estilo 2" class="card-img img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-19px-bold">MISTERY: “ TONOS ARENA”</h5>
+                            <p class="card-text text-17px-regular">Playas del mediterráneo, con tonos celestes y
+                                azulados.</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-19px-bold">SERENA: “ TONOS CLAROS”</h5>
-                        <p class="card-text text-17px-regular">Playas del caribe con arenas claras y aguas transparentes</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="img/color3.png" alt="Estilo 3" class="card-img img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-19px-bold">SERENA: “ TONOS CLAROS”</h5>
+                            <p class="card-text text-17px-regular">Playas del caribe con arenas claras y aguas
+                                transparentes</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <div class="container my-4">
@@ -298,7 +347,8 @@
                 </div>
 
                 <!-- Información adicional -->
-                <p class="text-start info-adicional">No hacemos publicidad, no hacemos Spam. <br> La información proporcionada solo será
+                <p class="text-start info-adicional">No hacemos publicidad, no hacemos Spam. <br> La información
+                    proporcionada solo será
                     utilizada para el contacto solicitado y luego del cierre, la misma es eliminada.</p>
 
                 <!-- Botón de Enviar -->
@@ -392,7 +442,8 @@
                     <div class="accordion" id="faqAccordion5">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive">
                                     ¿Cuál es el costo de instalación de una piscina?
                                 </button>
                             </h2>
