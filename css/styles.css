@@ -144,21 +144,21 @@
 
 /* Sección Inicio */
 .hero-section {
-  height: 100vh;
-  max-height: 650px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white; 
+  background-image: url('../img/PRINCIPAL.png');
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; /* Ancho completo */
+  height: 650px; /* Altura fija en pantallas grandes */
+  max-width: 1050px; /* Máximo ancho */
+  margin: 0 auto; /* Centrar la sección en pantallas grandes */
 }
 
-.hero-image {
-  max-height: 650px;
-  width: 1050px !important;
-  width: 100%;
-  height: auto;
-  border-radius: 0px; /* Opcional: redondear bordes */
-}
+
+
+
+
+
 /*
 h1 {
   font-family: 'Century Gothic', sans-serif;
@@ -195,9 +195,9 @@ h1 {
   font-size: 21px;
   font-weight: bold;
   letter-spacing: 2px; /* Espaciado entre letras */
-  border-radius: 15px;
+  border-radius: 15px; /* Borde cuadrado */
   padding: 0;
-  max-width: 975px !important;
+  width: 100%; /* Ancho completo */
   height: 63px;
   background-color: #3eb2ae;
   color: #fff;
@@ -211,6 +211,13 @@ h1 {
   background-color: #3eb2ae;
 }
 
+/* Limitar el ancho máximo solo en pantallas grandes */
+@media (min-width: 992px) {
+  .solicitar-presupuesto-btn {
+    max-width: 975px;
+  }
+}
+
 /* Botón Enviar en el Formulario */
 .btn-form {
   background-color: #3eb2ae;
@@ -220,9 +227,10 @@ h1 {
 
 /* Secciones */
 section .container {
-  max-width: 1000px !important;
+  max-width: 1000px;
   margin: 0 auto;
 }
+
 
 /* General para cards */
 .card {
@@ -272,6 +280,17 @@ section .container {
 .form-control,
 .form-select {
   font-size: 16px;
+  border-radius: 0; /* Borde cuadrado */
+}
+
+.form-check-input {
+  border-radius: 0; /* Borde cuadrado para los checkboxes */
+}
+
+.btn-form {
+  background-color: #3eb2ae;
+  border-color: #3eb2ae;
+  border-radius: 0; /* Borde cuadrado para el botón */
 }
 
 .form-check-label {
@@ -285,9 +304,8 @@ section .container {
   font-family: 'Century Gothic', sans-serif;
   font-size: 14px;
   font-weight: bold;
-  
-
 }
+
 
 /* Footer */
 footer {
@@ -303,15 +321,17 @@ footer {
   color: black !important; /* Texto negro */
   font-family: 'Century Gothic', sans-serif;
   font-size: 15px;
-  font-weight: normal;
-  border: 1px solid white !important; /* Borde blanco */
+  border: 1px solid #333 !important; /* Borde visible */
   box-shadow: none !important; /* Eliminar sombreado */
+  border-radius: 0 !important; /* Borde cuadrado */
+  padding: 10px 15px; /* Ajuste de padding */
 }
 
 .accordion-button:not(.collapsed) {
   background-color: white !important; /* Fondo blanco cuando está expandido */
   color: black !important;
-  border: 1px solid white !important;
+  border: 1px solid #333 !important; /* Borde visible */
+  border-radius: 0 !important; /* Borde cuadrado */
   box-shadow: none !important;
 }
 
@@ -320,6 +340,10 @@ footer {
   font-family: 'Century Gothic', sans-serif;
   font-size: 15px;
   font-weight: normal;
+  border: 1px solid #333; /* Borde del cuerpo del acordeón */
+  border-radius: 0; /* Borde cuadrado */
+  padding: 15px;
 }
+
 
 
