@@ -109,7 +109,7 @@
 
 
 .nav-link-custom {
-  font-family: 'CenturyGothic', sans-serif;
+  font-family: 'Century Gothic bold';
   font-size: 12px;
   font-weight: bold;
 }
@@ -178,20 +178,20 @@ h1 {
 
 /* Estilo para los títulos */
 .title-sm {
-  font-family: 'Century Gothic bold', sans-serif;
+  font-family: 'Century Gothic bold';
   font-size: 25px;
   font-weight: bold;
 }
 
 .subtitle-lg {
-  font-family: 'Century Gothic bold', sans-serif;
-  font-size: 47px;
+  font-family: 'Century Gothic bold';
+  font-size: 44px;
   font-weight: bold;
 }
 
 /* Botón Solicitar Presupuesto */
 .solicitar-presupuesto-btn {
-  font-family: 'ITCAvantGardeProBold', sans-serif;
+  font-family: 'ITCAvantGardeProBold';
   font-size: 21px;
   font-weight: bold;
   letter-spacing: 2px; /* Espaciado entre letras */
@@ -251,7 +251,7 @@ section .container {
 }
 
 .card-title {
-  font-family: 'Century Gothic bold', sans-serif;
+  font-family: 'Century Gothic bold';
   font-size: 19px;
   font-weight: bold;
   margin-bottom: 5px;
@@ -309,11 +309,55 @@ section .container {
 
 /* Footer */
 footer {
-  background-color: #000;
-  color: white;
-  text-align: center;
-  padding: 20px;
+  background-color: #000; /* Fondo negro */
+  color: white; /* Texto blanco */
+  text-align: center; /* Centrar texto */
+  padding: 20px 20px 40px; /* Aumentar padding inferior para empujar los elementos */
+  position: relative; /* Para usar control relativo */
 }
+
+footer p {
+  margin-bottom: 5px; /* Separar texto de los íconos */
+  padding-top: 30px;
+}
+
+.social-icons {
+  margin-top: 0px !important; /* Aumentar separación superior para que estén más abajo */
+  padding-bottom: 20px;
+}
+
+.social-icon {
+  width: 25px; /* Tamaño de los íconos */
+  height: px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Efecto de zoom en hover */
+}
+
+
+
+
+
+#faq.py-5 {
+  padding-top: 0 !important; /* Elimina el padding superior */
+}
+
+.faq-header {
+  height: 103px; /* Altura fija */
+  display: flex; /* Para centrar el contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  background-color: transparent; /* Opcional: color de fondo */
+  margin-bottom: 20px; /* Espaciado con el contenido debajo */
+}
+
+.faq-header h2 {
+  font-size: 24px; /* Tamaño de fuente */
+  margin: 0; /* Eliminar márgenes */
+}
+
 
 /* Estilos para el acordeón (Preguntas frecuentes) */
 .accordion-button {
@@ -325,6 +369,16 @@ footer {
   box-shadow: none !important; /* Eliminar sombreado */
   border-radius: 0 !important; /* Borde cuadrado */
   padding: 10px 15px; /* Ajuste de padding */
+
+  max-width: 520px; /* Ancho máximo */
+  height: 103px; /* Altura fija */
+  text-align: center; /* Centrar texto */
+   outline: none; /* Eliminar la línea de contorno */
+}
+
+/* Eliminar el contorno al enfocar */
+.accordion-button:focus {
+  outline: none; /* Eliminar contorno al hacer foco */
 }
 
 .accordion-button:not(.collapsed) {
@@ -333,6 +387,14 @@ footer {
   border: 1px solid #333 !important; /* Borde visible */
   border-radius: 0 !important; /* Borde cuadrado */
   box-shadow: none !important;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .accordion-button {
+    width: 100% !important; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
 }
 
 .accordion-body {
@@ -344,6 +406,3 @@ footer {
   border-radius: 0; /* Borde cuadrado */
   padding: 15px;
 }
-
-
-
