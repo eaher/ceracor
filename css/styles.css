@@ -328,12 +328,25 @@ footer p {
 
 .social-icon {
   width: 25px; /* Tamaño de los íconos */
-  height: px;
+  height: 25px;
   transition: transform 0.3s ease;
 }
 
 .social-icon:hover {
   transform: scale(1.2); /* Efecto de zoom en hover */
+}
+
+.social-icons a {
+  margin-right: 5px; /* Ajusta el espaciado entre íconos */
+}
+
+.social-icons a:last-child {
+  margin-right: 0; /* Asegúrate de que el último ícono no tenga margen extra */
+}
+
+.social-icon {
+  width: 30px; /* Ajusta el tamaño del ícono si es necesario */
+  height: auto;
 }
 
 
