@@ -194,15 +194,24 @@
 
 /* Ajuste para pantallas pequeñas */
 @media (max-width: 768px) {
+  .hero-content {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición para estar centrado */
+    text-align: center; /* Centra el texto */
+    width: 100vw;
+  }
+
   .text-container {
-    width: auto;
+  width /* Ajusta el ancho para pantallas pequeñas */
   }
 
   .text-container p {
     font-size: 30px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    text-align: center; /* Centra el texto dentro del contenedor */
   }
 }
-
 
 
 
