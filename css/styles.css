@@ -239,6 +239,8 @@
   font-size: 44px;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 /* Responsividad para pantallas pequeñas */
@@ -249,6 +251,7 @@
 
   .subtitle-lg {
     font-size: 32px; /* Ajusta el tamaño del subtítulo */
+    letter-spacing: 0.01em; /* Espaciado entre letras */
   }
 
   .container {
@@ -312,6 +315,18 @@
   flex-direction: column;
   justify-content: center;
 }
+
+
+#contacto h2 {
+  margin-top: 0px; /* Ajusta el margen superior */
+  margin-bottom: 50px; /* Ajusta el margen inferior */
+  font-family: 'Century Gothic', sans-serif; /* Cambia la fuente si lo deseas */
+  font-size: 36px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Define el grosor */
+  color: #333; /* Cambia el color del texto */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
 
 /* Secciones */
 section .container {
@@ -490,20 +505,14 @@ footer p {
   box-shadow: none !important;
 }
 
-/* Ajustes para pantallas pequeñas */
+
+/* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
   .accordion-button {
-    width: 100% !important; /* Ocupa todo el ancho del contenedor */
-    height: auto; /* Ajusta la altura automáticamente */
+    max-width: 100%; /* Ocupa todo el ancho del contenedor */
+    width: 100%; /* Garantiza el ancho completo */
+    text-align: left; /* Cambia el texto alineado a la izquierda si es necesario */
+    padding: 10px; /* Ajusta el padding para mejor apariencia */
+    height: auto; /* Permite altura dinámica */
   }
-}
-
-.accordion-body {
-  color: black;
-  font-family: 'Century Gothic', sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  border: 1px solid #333; /* Borde del cuerpo del acordeón */
-  border-radius: 0; /* Borde cuadrado */
-  padding: 15px;
 }
