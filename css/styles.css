@@ -118,7 +118,7 @@
   .navbar .logo-img,
   .navbar .logo-img-right {
     max-height: 40px;
-    width: auto;
+    max-width: 100px;
   }
 
   /* Alinear ambos logos a la izquierda con espaciado */
@@ -270,7 +270,7 @@
 
 #contacto {
   min-height: 100vh; /* Ocupa el 100% del alto de la ventana */
-  display: flex; /* Opcional: Asegura que el contenido esté centrado si lo necesitas */
+  display: flex; /* Opcional: Asegura que el contenido esté centrado  */
   flex-direction: column;
   justify-content: center;
 }
