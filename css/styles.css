@@ -68,7 +68,7 @@
   line-height: 1; /* Aumenta el interlineado */
   padding: 10px 0;
   color: #333;
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'Century Gothic';
   font-size: 16px;
   font-weight: bold;
 }
@@ -152,11 +152,56 @@
   height: 650px; /* Altura fija en pantallas grandes */
   max-width: 1050px; /* Máximo ancho */
   margin: 0 auto; /* Centrar la sección en pantallas grandes */
+  position: relative; /* Necesario para posicionar contenido dentro */
 }
 
+.hero-content {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right; /* Asegura la alineación a la derecha */
+}
 
+.text-container {
+  max-width:400px; /* Ancho fijo del contenedor */
+}
 
+.text-container p {
+  font-family: 'Century Gothic';
+  font-size: 43px; /* Tamaño del texto */
+  font-weight: bold;
+  color: white;
+  line-height: 1; /* Espaciado entre líneas */
+  margin: 0;
+  margin-bottom: 5px;
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra del texto */
+  
+}
 
+/* espaciado individual para cada línea */
+.line-1 {
+  letter-spacing: 0.05em; /* Espaciado entre letras */
+}
+
+.line-2 {
+  letter-spacing: 0.09em; /* Espaciado entre letras */
+}
+
+.line-3 {
+  letter-spacing: 0.02em; /* Espaciado entre letras */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  .text-container {
+    width: auto;
+  }
+
+  .text-container p {
+    font-size: 30px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+  }
+}
 
 
 /*
