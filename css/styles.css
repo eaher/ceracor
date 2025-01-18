@@ -348,6 +348,11 @@ padding-bottom: 0px !important;
   margin-top: 0px;
 }
 
+#lastbtn.container.container.my-4{
+  margin-bottom: 0px !important;
+  margin-top: 5px !important;
+}
+
 
 
 /* Ajustes para pantallas pequeñas */
@@ -359,15 +364,17 @@ padding-bottom: 0px !important;
   }
   .container.my-4{
 max-width: 100vw;
+margin-bottom: 10px;
 
+  }
+
+  #lastbtn.container.container.my-4{
+    margin-bottom: 20px !important;
+    margin-top: 5px !important;
   }
   
 }
 
-#lastbtn.container.container.my-4{
-  margin-bottom: 0px !important;
-  margin-top: 5px !important;
-}
 
 
 /* Botón Enviar en el Formulario */
