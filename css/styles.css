@@ -204,13 +204,6 @@
 }
 
 
-/*
-h1 {
-  font-family: 'Century Gothic', sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}*/
 
 
 /* Estilo general */
@@ -241,15 +234,17 @@ h1 {
   font-weight: bold;
   letter-spacing: 2px; /* Espaciado entre letras */
   border-radius: 15px; /* Borde cuadrado */
-  padding: 0;
   width: 100%; /* Ancho completo */
-  height: 63px;
+  height: 45px;
   background-color: #3eb2ae;
   color: #fff;
   border: none;
   text-align: center;
   display: block;
   margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
 }
 
 .solicitar-presupuesto-btn:hover {
@@ -268,6 +263,16 @@ h1 {
   background-color: #3eb2ae;
   border-color: #3eb2ae;
   border-radius: 0;
+  height: 45px;
+  font-size: 21px;
+
+}
+
+#contacto {
+  min-height: 100vh; /* Ocupa el 100% del alto de la ventana */
+  display: flex; /* Opcional: Asegura que el contenido esté centrado si lo necesitas */
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Secciones */
