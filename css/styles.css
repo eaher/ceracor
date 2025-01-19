@@ -348,9 +348,10 @@ padding-bottom: 0px !important;
   margin-top: 0px;
 }
 
-#lastbtn.container.container.my-4{
-  margin-bottom: 0px !important;
-  margin-top: 5px !important;
+#lastbtn.container.my-4{
+  margin-bottom: 40px !important;
+  margin-top: 0px !important;
+  
 }
 
 
@@ -359,7 +360,7 @@ padding-bottom: 0px !important;
 @media (max-width: 768px) {
   .solicitar-presupuesto-btn {
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: 15px;  
   }
   .container.my-4{
@@ -368,8 +369,8 @@ margin-bottom: 10px;
 
   }
 
-  #lastbtn.container.container.my-4{
-    margin-bottom: 20px !important;
+  #lastbtn.container.my-4{
+    margin-bottom: 40px !important;
     margin-top: 5px !important;
   }
   
@@ -387,14 +388,6 @@ margin-bottom: 10px;
 
 }
 
-#contacto {
-  min-height: 100vh;
-  /* Ocupa el 100% del alto de la ventana */
-  display: flex;
-  /* Opcional: Asegura que el contenido esté centrado  */
-  flex-direction: column;
-  justify-content: center;
-}
 
 #contacto.container{
   min-height: 100vh;
