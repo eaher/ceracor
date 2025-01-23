@@ -663,7 +663,7 @@ footer p {
   /* Fondo blanco */
   color: black !important;
   /* Texto negro */
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'Century Gothic';
   font-size: 15px;
   border: 1px solid #333 !important;
   /* Borde visible */
@@ -699,8 +699,12 @@ footer p {
   border-radius: 0 !important;
   /* Borde cuadrado */
   box-shadow: none !important;
+  
 }
 
+.custom-font {
+  font-family: 'Century Gothic' !important;
+}
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
@@ -715,5 +719,9 @@ footer p {
     /* Ajusta el padding para mejor apariencia */
     height: auto;
     /* Permite altura dinámica */
+  }
+
+  .custom-font {
+    font-family: 'Century Gothic' !important;
   }
 }
