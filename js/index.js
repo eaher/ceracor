@@ -150,3 +150,53 @@ document.getElementById('presupuestoForm').addEventListener('submit', function (
   }
 });
 
+// Manejo del popup modal para el formulario
+document.getElementById("presupuestoForm").addEventListener("submit", function (e) {
+  e.preventDefault(); // Evita el envío estándar del formulario
+
+  const formData = new FormData(this); // Recoge los datos del formulario
+
+  fetch("procesar_formulario.php", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const modal = document.getElementById("responseModal");
+      const modalMessage = document.getElementById("modalMessage");
+
+      if (data.success) {
+        modalMessage.innerHTML = `<p>${data.message}</p>`;
+        document.getElementById("presupuestoForm").reset(); // Limpia el formulario
+      } else {
+        modalMessage.innerHTML = `<p>${data.message}</p>`;
+        if (data.errors) {
+          modalMessage.innerHTML += `<ul>${data.errors
+            .map((error) => `<li>${error}</li>`)
+            .join("")}</ul>`;
+        }
+      }
+
+      modal.style.display = "block"; // Muestra el modal
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+});
+
+// Cierra el modal cuando el usuario hace clic en el botón "Cerrar"
+document.getElementById("closeModal").addEventListener("click", function () {
+  document.getElementById("responseModal").style.display = "none";
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Mostrar el botón de WhatsApp con un retardo de 2 segundos
+  setTimeout(function() {
+    var whatsappButton = document.querySelector('.whatsapp-float');
+    if (whatsappButton) {
+      whatsappButton.style.display = "flex";
+    }
+  }, 2000); // 2000 milisegundos = 2 segundos
+});
+

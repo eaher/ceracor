@@ -1,9 +1,8 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Validación de los campos del formulario
     $errores = [];
 
-    // Verifica que cada campo obligatorio esté completo y que los datos sean válidos
+    // Validación de los campos
     if (empty($_POST["tipoProyecto"])) {
         $errores[] = "El campo 'Tipo de Proyecto' es obligatorio.";
     }
@@ -17,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $errores[] = "El campo 'Apellidos' es obligatorio.";
     }
     if (empty($_POST["telefono"]) || !preg_match('/^[1-9][0-9]{2}[0-9]{6,7}$/', $_POST["telefono"])) {
-        $errores[] = "El campo 'Teléfono' es obligatorio y debe tener un formato válido (ejemplo: 3512016896).";
+        $errores[] = "El campo 'Teléfono' es obligatorio y debe tener un formato válido.";
     }
     if (empty($_POST["email"]) || !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
         $errores[] = "El campo 'Email' es obligatorio y debe tener un formato válido.";
@@ -29,22 +28,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $errores[] = "El campo 'Ciudad' es obligatorio.";
     }
 
-    // Si hay errores, los muestra y detiene el procesamiento
     if (!empty($errores)) {
-        echo "<h3>Se encontraron errores en el formulario:</h3>";
-        echo "<ul>";
-        foreach ($errores as $error) {
-            echo "<li>" . htmlspecialchars($error) . "</li>";
-        }
-        echo "</ul>";
+        echo json_encode([
+            "success" => false,
+            "message" => "Se encontraron errores en el formulario.",
+            "errors" => $errores
+        ]);
         exit;
     }
 
     // Configuración del correo
-    $destinatario = "tu_email@example.com"; // Cambia a tu dirección de correo
-    $asunto = "Solicitud de Presupuesto";
+    $destinatario = "ventas@ceracor.com.ar";
+    $asunto = "Solicitud de Presupuesto - CampRosaGres";
 
-    // Datos del formulario
     $tipoProyecto = htmlspecialchars($_POST["tipoProyecto"]);
     $tipoPiscina = htmlspecialchars($_POST["tipoPiscina"]);
     $nombre = htmlspecialchars($_POST["nombre"]);
@@ -53,11 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = htmlspecialchars($_POST["email"]);
     $provincia = htmlspecialchars($_POST["provincia"]);
     $ciudad = htmlspecialchars($_POST["ciudad"]);
-
-    // Preferencias de contacto
     $contacto = isset($_POST["contacto"]) ? implode(", ", $_POST["contacto"]) : "No especificado";
 
-    // Construcción del mensaje
     $mensaje = "
     <html>
     <head>
@@ -77,18 +70,25 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </body>
     </html>";
 
-    // Encabezados para envío de correo en formato HTML
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= "From: no-reply@tudominio.com" . "\r\n";
+    $headers .= "From: no-reply@ceracor-CampRosaGres.com.ar" . "\r\n";
 
-    // Enviar correo
     if (mail($destinatario, $asunto, $mensaje, $headers)) {
-        echo "Correo enviado exitosamente.";
+        echo json_encode([
+            "success" => true,
+            "message" => "Hemos recibido tu consulta, te contactaremos lo antes posible."
+        ]);
     } else {
-        echo "Error al enviar el correo.";
+        echo json_encode([
+            "success" => false,
+            "message" => "Error al enviar tu consulta. Por favor, inténtalo de nuevo más tarde."
+        ]);
     }
 } else {
-    echo "Acceso no permitido.";
+    echo json_encode([
+        "success" => false,
+        "message" => "Acceso no permitido."
+    ]);
 }
 ?>
